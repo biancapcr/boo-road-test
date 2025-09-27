@@ -5,10 +5,8 @@ function Header({ onLoginClick, onRegisterClick }) {
   return (
     <header className="homepage-header">
       <div className="top-bar">
-        {/* logo */}
         <div className="logo">BooRoad</div>
 
-        {/* nav */}
         <nav className="main-nav">
           <Link to="/">Home</Link>
           <Link to="/viaggi">Viaggi</Link>
@@ -16,7 +14,6 @@ function Header({ onLoginClick, onRegisterClick }) {
           <Link to="/contatti">Contatti</Link>
         </nav>
 
-        {/* bottoni login/registrati */}
         <div className="auth-buttons">
           <button onClick={onLoginClick} className="btn btn-outline-light me-2">
             Login
@@ -29,7 +26,6 @@ function Header({ onLoginClick, onRegisterClick }) {
           </button>
         </div>
       </div>
-
       <hr className="header-divider" />
     </header>
   );
