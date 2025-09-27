@@ -4,6 +4,7 @@ import Modal from "../components/Modal";
 import Login from "../components/Login";
 import Registrati from "../components/Registrati";
 
+
 function HomePage() {
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
@@ -11,38 +12,7 @@ function HomePage() {
   return (
     <div className="homepage">
       {/* header */}
-      <header className="homepage-header">
-        <div className="top-bar">
-          {/* logo */}
-          <div className="logo">BooRoad</div>
 
-          {/* nav */}
-          <nav className="main-nav">
-            <a href="/">Home</a>
-            <a href="/viaggi">Viaggi</a>
-            <a href="/rubrica">Rubrica</a>
-            <a href="/contatti">Contatti</a>
-          </nav>
-
-          {/* bottoni a destra */}
-          <div className="auth-buttons">
-            <button
-              onClick={() => setShowLogin(true)}
-              className="btn btn-outline-light me-2"
-            >
-              Login
-            </button>
-            <button
-              onClick={() => setShowRegister(true)}
-              className="btn btn-outline-light me-2"
-            >
-              Registrati
-            </button>
-          </div>
-        </div>
-
-        <hr className="header-divider" />
-      </header>
 
       {/* hero */}
       <section className="hero">
