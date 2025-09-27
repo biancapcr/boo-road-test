@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "../index.css";
+import Modal from "../components/Modal";
+import Login from "../components/Login";
+import Registrati from "../components/Registrati";
 
 function HomePage() {
+  const [showLogin, setShowLogin] = useState(false);
+  const [showRegister, setShowRegister] = useState(false);
+
   return (
     <div className="homepage">
+      {/* header */}
       <header className="homepage-header">
         <div className="top-bar">
-          {/* Logo a sinistra */}
+          {/* logo */}
           <div className="logo">BooRoad</div>
 
-          {/* Nav centrata */}
+          {/* nav */}
           <nav className="main-nav">
             <a href="/">Home</a>
             <a href="/viaggi">Viaggi</a>
@@ -17,24 +24,27 @@ function HomePage() {
             <a href="/contatti">Contatti</a>
           </nav>
 
-          {/* Bottoni a destra */}
+          {/* bottoni a destra */}
           <div className="auth-buttons">
-            <a href="/login" className="btn btn-outline-light me-2">
+            <button
+              onClick={() => setShowLogin(true)}
+              className="btn btn-outline-light me-2"
+            >
               Login
-            </a>
-            <a href="/registrazione" className="btn btn-outline-light me-2">
+            </button>
+            <button
+              onClick={() => setShowRegister(true)}
+              className="btn btn-outline-light me-2"
+            >
               Registrati
-            </a>
+            </button>
           </div>
         </div>
 
         <hr className="header-divider" />
-
-        {/* linea divisoria */}
-        <hr className="header-divider" />
       </header>
 
-      {/* HERO */}
+      {/* hero */}
       <section className="hero">
         <div className="hero-overlay"></div>
         <div className="hero-content">
@@ -49,7 +59,7 @@ function HomePage() {
         <span></span>
       </div>
 
-      {/* DESTINATIONS */}
+      {/* destinazioni */}
       <section className="destinations text-center">
         <p className="subtitle">Le nostre raccomandazioni</p>
         <h2 className="section-title">Prossimi viaggi in evidenza</h2>
@@ -100,6 +110,23 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* modali */}
+      <Modal
+        show={showLogin}
+        onClose={() => setShowLogin(false)}
+        title="Accedi"
+      >
+        <Login />
+      </Modal>
+
+      <Modal
+        show={showRegister}
+        onClose={() => setShowRegister(false)}
+        title="Registrati"
+      >
+        <Registrati />
+      </Modal>
     </div>
   );
 }
