@@ -15,8 +15,13 @@
     "bootstrap": "^5.3.8",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+<<<<<<< HEAD
     "react-router-dom": "^7.9.3",
     "tailwindcss": "^4.1.13"
+=======
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.9.3"
+>>>>>>> 2c2c4c39b1b778177737fc14750e622e4ed255c3
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
