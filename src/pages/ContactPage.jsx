@@ -271,7 +271,7 @@ const ContactPage = () => {
           <h1>
             Boo Road <span>Contatti</span>
           </h1>
-          <p>Siamo qui per aiutarti a pianificare la tua prossima avventura.</p>
+          <p>Siamo qui per aiutarti a pianificare la tua avventura.</p>
         </header>
 
         {/* Contenitore principale del modulo - Griglia a 3 colonne su desktop */}
