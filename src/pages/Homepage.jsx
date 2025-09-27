@@ -12,13 +12,20 @@ function HomePage() {
 
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div className="homepage">
       {/* header */}
 
 =======
     <DefaultLayout>
+=======
+    <DefaultLayout
+      onLoginClick={() => setShowLogin(true)}
+      onRegisterClick={() => setShowRegister(true)}
+    >
+>>>>>>> 57ec257c6ec1d11cf4c8977bf02de1c23233caa2
       <div className="homepage">
-        {/* hero */}
+        {/* HERO */}
         <section className="hero">
           <div className="hero-overlay"></div>
           <div className="hero-content">
@@ -29,7 +36,7 @@ function HomePage() {
           </div>
         </section>
 
-        {/* doppia linea separatrice */}
+        {/* doppia linea */}
         <div className="double-divider">
           <span></span>
           <span></span>
@@ -39,6 +46,7 @@ function HomePage() {
         <section className="destinations text-center">
           <p className="subtitle">Le nostre raccomandazioni</p>
           <h2 className="section-title">Prossimi viaggi in evidenza</h2>
+<<<<<<< HEAD
 >>>>>>> 2c2c4c39b1b778177737fc14750e622e4ed255c3
 
           <div className="row justify-content-center mt-5">
@@ -86,6 +94,9 @@ function HomePage() {
               </div>
             </div>
           </div>
+=======
+          {/* cards */}
+>>>>>>> 57ec257c6ec1d11cf4c8977bf02de1c23233caa2
         </section>
 
         {/* modali */}
