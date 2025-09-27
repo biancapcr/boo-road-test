@@ -61,12 +61,6 @@ function Rubrica() {
       telefono: "3331122445",
       email: "giorgio.conti@email.com",
     },
-    {
-      nome: "Sara",
-      cognome: "Fontana",
-      telefono: "3299988776",
-      email: "sara.fontana@email.com",
-    },
   ];
 
   const filtrati = partecipanti.filter((p) =>
@@ -76,16 +70,19 @@ function Rubrica() {
   return (
     <DefaultLayout>
       <div className="rubrica-page">
-        <h2 className="rubrica-title">Rubrica Partecipanti</h2>
+        {/* Contenitore con cornice dorata */}
+        <div className="rubrica-container">
+          <h2 className="rubrica-title">Rubrica Partecipanti</h2>
+          <input
+            type="text"
+            placeholder="Cerca per nome o cognome..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="search-bar"
+          />
+        </div>
 
-        <input
-          type="text"
-          placeholder="Cerca per nome o cognome..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          className="search-bar"
-        />
-
+        {/* Lista partecipanti */}
         <div className="rubrica-list">
           {filtrati.map((p, i) => (
             <div key={i} className="rubrica-item">
