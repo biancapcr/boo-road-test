@@ -33,7 +33,7 @@ function App() {
         <Route path="/rubrica" element={<Rubrica />} />
       </Routes>
     </BrowserRouter>
->>>>>>> 2c2c4c39b1b778177737fc14750e622e4ed255c3
+>>>>>
   );
 }
 
