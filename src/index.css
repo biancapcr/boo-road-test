@@ -379,8 +379,9 @@
 
 /* testi */
 .rubrica-item h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
   margin-bottom: 12px;
   display: flex;
   align-items: center;
@@ -395,6 +396,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: italic;
 }
 
 /* hero viaggi */
@@ -560,7 +564,6 @@
 }
 
 /* pagina contatti */
-
 .container-app {
   min-height: 100vh;
   padding: 120px 20px 50px;
