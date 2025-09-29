@@ -771,6 +771,7 @@
 }
 
 /* pagina rubrica con form modifica */
+
 .rubrica-form {
   display: flex;
   flex-wrap: wrap;
@@ -796,7 +797,7 @@
 
 .rubrica-form .input-icon input {
   width: 100%;
-  padding: 8px 10px 8px 32px; /* spazio per icona */
+  padding: 8px 10px 8px 32px;
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 0.9rem;
@@ -804,7 +805,7 @@
 }
 
 .rubrica-form .input-icon input:focus {
-  border-color: #4caf50;
+  border-color: #060300;
   outline: none;
   box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
 }
@@ -865,4 +866,128 @@
 .rubrica-actions button.delete:hover {
   background: #ffebee;
   color: #1a242f;
+}
+
+/* pagina gestione viaggi */
+
+.gestione-viaggi-page {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 100px 20px 40px;
+  background: url("https://i.pinimg.com/1200x/b2/03/25/b20325655f1abd49b10e9f1adeae99ed.jpg")
+    center/cover no-repeat;
+  color: #eee;
+  font-family: "Playfair Display", sans-serif;
+}
+
+/* titolo */
+
+.gestione-viaggi-page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* form creazione/modifica viaggio */
+
+.viaggi-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 0 auto 40px;
+  max-width: 700px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+/* label */
+
+.viaggi-form label {
+  color: #bbb;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  font-size: 0.9rem;
+}
+
+.viaggi-form input[type="date"] {
+  width: 100%;
+  min-width: 250px;
+}
+.viaggi-form input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+/* input e textarea */
+
+.viaggi-form input,
+.viaggi-form textarea {
+  padding: 8px 12px;
+  border: 1px solid #666;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #1e1e1e;
+  color: #eee;
+}
+
+.viaggi-form input:focus,
+.viaggi-form textarea:focus {
+  border-color: #ccc;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0);
+}
+
+/* bottone */
+
+.viaggi-form button {
+  padding: 12px;
+  background: #060300;
+  border: 1px solid #bbb;
+  color: #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.viaggi-form button:hover {
+  background: #bbb;
+}
+
+/* anteprima */
+
+.anteprima h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 23px;
+}
+
+/* viaggi pubblicati */
+
+.viaggi-pubblicati-toggle {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.viaggi-pubblicati-toggle button {
+  padding: 10px 16px;
+  background: #000;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.viaggi-pubblicati-toggle button:hover {
+  background: #060300;
 }

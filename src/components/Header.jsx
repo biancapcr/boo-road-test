@@ -12,6 +12,8 @@ function Header({ onLoginClick, onRegisterClick }) {
           <Link to="/viaggi">Viaggi</Link>
           <Link to="/rubrica">Rubrica</Link>
           <Link to="/contatti">Contatti</Link>
+          <Link to="/gestione-viaggi">Gestione Viaggi</Link>{" "}
+          {/* 🔹 nuovo link */}
         </nav>
 
         <div className="auth-buttons">
