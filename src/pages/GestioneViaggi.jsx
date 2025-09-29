@@ -13,7 +13,7 @@ function GestioneViaggi() {
   });
 
   const [viaggi, setViaggi] = useState([]);
-  const [showViaggi, setShowViaggi] = useState(true);
+  const [showViaggi, setShowViaggi] = useState(false);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
